@@ -1,27 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url(https://fonts.cdnfonts.com/css/avenir-lt-pro);
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* body, html {
+    overflow-x: hidden;
+} */
+
+.section{
+    @apply px-8 min-w-full
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.inner_section{
+    @apply mx-auto max-w-[1376px]
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.banner{
+    @apply bg-[url('../assets/mobile-banner.png')] sm:bg-[url('https://i.imgur.com/YBRVqrJ.png')] bg-no-repeat bg-[length:100%_100%]
+}
+
+.newsletter{
+    /* background-image: url("../assets/newletter_img.png"); */
+    @apply bg-[url('../assets/newletter_img.png')] bg-no-repeat bg-[length:100%_100%]
+}
+
+/* .nnn{
+    @apply max-[850px]:bg-black
+} */
+
+.newsletter2{
+    @apply bg-[url('../assets/newsletter2.png')] bg-no-repeat bg-[length:100%_100%]
 }
