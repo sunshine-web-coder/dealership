@@ -5,7 +5,7 @@ export default function Newsletter() {
   return (
     <div className="newsletter relative py-[83px] md:py-[265px] justify-start items-center flex">
       <div className="absolute top-0 h-full w-full bg-black bg-opacity-50 " /> 
-    <div className="self-stretch relative z-10 border mx-auto md:m-0 max-w-[602px] px-[10px] md:px-0 md:pl-8 flex-col justify-start items-center md:items-start gap-10 flex">
+    <div className="self-stretch relative z-10 mx-auto md:m-0 max-w-[602px] px-[10px] md:px-0 md:pl-8 flex-col justify-start items-center md:items-start gap-10 flex">
         <div className={`text-neutral-100 text-base font-normal ${inter.className}`}>NEWSLETTER</div>
         <div className="flex-col justify-start md:mx items-start gap-5 flex">
             <div className={`self-stretch justify-start text-center md:text-left items-center gap-2.5 flex grow shrink basis-0 text-neutral-100 text-[40px] font-bold ${avenirLtPro.className}`}>

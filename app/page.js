@@ -1,13 +1,13 @@
 import Banner from "@/components/banner/Banner";
 import Discover from "@/components/sections/home/Discover";
-import FeaturedVehicles from "@/components/sections/home/FeaturedVehicles";
 import First from "@/components/sections/home/First";
-import LatestVehicles from "@/components/sections/home/LatestVehicles";
+import LatestVehicles from "@/components/sections/home/latestVehicles/LatestVehicles";
 import Newsletter from "@/components/sections/home/Newsletter";
-import Testimonials from "@/components/sections/home/Testimonials";
+import Testimonials from "@/components/sections/home/testimonials/Testimonials";
 import { avenirLtPro, inter } from "./fonts";
 import BlogPost from "@/components/sections/home/BlogPost";
 import NewsletterBottom from "@/components/sections/home/NewsletterBottom";
+import FeaturedVehicles from "@/components/sections/home/featureVehicles/FeaturedVehicles";
 
 export default function Home() {
   return (
@@ -15,11 +15,11 @@ export default function Home() {
       <Banner />
       <First />
       <Discover />
-      {/* <FeaturedVehicles /> */}
+      <FeaturedVehicles />
       <Newsletter />
-      {/* <LatestVehicles /> */}
-      {/* <Testimonials /> */}
-      <div className="w-full bg-neutral-800 px-[10px] py-10 md:p-5 my-[100px]">
+      <LatestVehicles />
+      <Testimonials />
+      <div className="w-full bg-neutral-800 px-[10px] py-10 md:p-5 my-[60px] md:my-[100px]">
         <div className="inner_section flex flex-col items-center justify-center border-0 md:border">
           <div className="flex max-w-[187px] md:max-w-[1075px] mx-auto flex-col md:flex-row items-center justify-start gap-10 md:gap-20 lg:gap-40">
             <div className="flex items-center md:items-start flex-col text-center md:text-left md:flex-row justify-start gap-5">

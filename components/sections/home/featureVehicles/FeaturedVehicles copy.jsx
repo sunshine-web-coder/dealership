@@ -15,7 +15,7 @@ export default function FeaturedVehicles() {
     </div>
     <div className="flex-col justify-start items-start gap-5 flex">
         <div className="flex gap-5">
-            {featuredVehicleslideData.map((item) => (
+        {featuredVehicleslideData.map((item) => (
                 <div key={item.label} className="w-[1027px] h-[500px] border border-neutral-800 justify-start items-start flex">
                 <Image src={slideImg1} width="490" height="500" className="w-[490px] h-[500px] relative" alt='slide_img' />
                 <div className="h-[500px] px-10 py-[50px] flex-col justify-start items-start gap-2.5 flex">
