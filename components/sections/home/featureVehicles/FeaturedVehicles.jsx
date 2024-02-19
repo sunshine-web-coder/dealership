@@ -3,7 +3,7 @@ import TheSliderSlick from "./TheSliderSlick";
 
 export default function FeaturedVehicles() {
   return (
-    <div className="my-[60px] md:my-[100px] flex min-h-[707px] w-full flex-col items-start justify-start gap-[60px]">
+    <div className="mt-[60px] md:mt-[100px] mb-[100px] flex min-h-[707px] w-full flex-col items-start justify-start gap-[60px]">
       <div className="flex flex-col items-start justify-start gap-10 pl-4 md:pl-8">
         <div className={`text-base font-normal text-neutral-800 ${inter.className}`}>
           WE RECOMMEND
