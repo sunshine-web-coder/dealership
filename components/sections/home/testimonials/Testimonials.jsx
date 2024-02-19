@@ -5,7 +5,7 @@ import TheSliderSlick from "./TheSliderSlick";
 
 export default function Testimonials() {
   return (
-    <div className="pr-4 pl-4 md:pl-8 md:pr-0">
+    <div className="mt-[60px] md:mt-[100px] mb-[100px] pr-4 pl-4 md:pl-8 md:pr-0">
       <div className="flex w-full flex-col items-start justify-start gap-10 md:gap-20">
         <div className="flex flex-col items-start justify-start gap-10">
           <div className={`text-base font-normal text-neutral-800 ${inter.className}`}>

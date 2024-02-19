@@ -21,7 +21,7 @@
 
 .newsletter{
     /* background-image: url("../assets/newletter_img.png"); */
-    @apply bg-[url('../assets/newletter_img.png')] bg-no-repeat bg-[length:100%_100%]
+    @apply bg-[url('../assets/newletter_img-mobile.png')] sm:bg-[url('../assets/newletter_img.png')] bg-no-repeat bg-[length:100%_100%]
 }
 
 /* .nnn{
@@ -29,5 +29,5 @@
 } */
 
 .newsletter2{
-    @apply bg-[url('../assets/newsletter2.png')] bg-no-repeat bg-[length:100%_100%]
+    @apply bg-[url('../assets/newsletter2_mobile.png')] sm:bg-[url('../assets/newsletter2.png')] bg-no-repeat bg-[length:100%_100%]
 }

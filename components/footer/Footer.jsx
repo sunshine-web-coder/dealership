@@ -4,8 +4,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="h-full w-full bg-neutral-800 px-8 pb-[120px] pt-10 lg:h-[462px]">
-      
+    <div className="h-full w-full bg-neutral-800 px-8 pb-[32px] md:pb-[120px] pt-[32px] md:pt-10 border">
       <div className="inner_section flex flex-col items-start justify-start gap-0 md:gap-5">
         <div className="flex items-center justify-center md:justify-start gap-2">
           <svg

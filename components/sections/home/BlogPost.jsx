@@ -20,32 +20,45 @@ export default function BlogPost() {
             Auto World Blog
           </div>
         </div>
-        <div className="flex mt-[60px] flex-wrap items-center lg:flex-nowrap lg:items-start justify-center lg:justify-start gap-[21px]">
-            {blogPostList.map((post) => (
-                <div key={post.title} className="flex w-[445px] flex-col items-start justify-start">
-                <Image
-                  width="445"
-                  src={post.img}
-                  height="310"
-                  className="relative h-[310px] w-[445px] border"
-                  alt="blog_img"
-                />
-                <div className="flex min-h-[301px] flex-col items-end justify-start gap-[26px] border border-neutral-800 border-t-0">
-                  <div className="flex min-h-[215px] flex-col items-center justify-start gap-10 self-stretch p-5">
-                    <div className={`flex items-center justify-between self-stretch text-base font-normal text-neutral-800 ${inter.className}`}>
-                      <div className="uppercase">{post.category}</div>
-                      <div>{post.date}</div>
+        <div className="mt-[60px] flex flex-wrap items-center justify-center gap-[21px] lg:flex-nowrap lg:items-start lg:justify-start">
+          {blogPostList.map((post) => (
+            <div
+              key={post.title}
+              className="flex w-[445px] flex-col items-start justify-start"
+            >
+              <Image
+                width="445"
+                src={post.img}
+                height="310"
+                className="relative h-[310px] w-[445px] border"
+                alt="blog_img"
+              />
+              <div className="flex min-h-[301px] flex-col items-end justify-start gap-[26px] border border-t-0 border-neutral-800">
+                <div className="flex min-h-[215px] flex-col items-center justify-start gap-10 self-stretch p-5">
+                  <div
+                    className={`flex items-center justify-between self-stretch text-base font-normal text-neutral-800 ${inter.className}`}
+                  >
+                    <div className="uppercase">{post.category}</div>
+                    <div>{post.date}</div>
+                  </div>
+                  <div className="flex h-[116px] flex-col items-start justify-start gap-5 self-stretch">
+                    <div
+                      className={`self-stretch text-2xl font-bold text-neutral-800 ${avenirLtPro.className}`}
+                    >
+                      {post.title}
                     </div>
-                    <div className="flex h-[116px] flex-col items-start justify-start gap-5 self-stretch">
-                      <div className={`self-stretch text-2xl font-bold text-neutral-800 ${avenirLtPro.className}`}>
-                        {post.title}
-                      </div>
-                      <div className={`self-stretch text-base font-normal text-neutral-800 ${inter.className}`}>
-                        {post.desc}
-                      </div>
+                    <div
+                      className={`self-stretch text-base font-normal text-neutral-800 ${inter.className}`}
+                    >
+                      {post.desc}
                     </div>
                   </div>
-                  <Link href={post.slug} className="flex relative left-[1px] top-[1px] h-[60px] w-[60px] flex-col items-center justify-center gap-2.5 border border-neutral-800 p-2.5">
+                </div>
+                <div className="mt-[50px] sm:mt-[30px]">
+                  <Link
+                    href={post.slug}
+                    className="relative left-[1px] top-[1px] flex h-[60px] w-[60px] flex-col items-center justify-center gap-2.5 border border-neutral-800 p-2.5"
+                  >
                     <svg
                       width="11"
                       height="8"
@@ -62,8 +75,8 @@ export default function BlogPost() {
                   </Link>
                 </div>
               </div>
-            ))}
-          
+            </div>
+          ))}
         </div>
       </div>
     </div>
