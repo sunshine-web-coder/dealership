@@ -19,7 +19,7 @@ export default function First() {
     },
   ];
   return (
-    <div className="flex flex-col items-center md:flex-row inner_section justify-between gap-5 px-8 my-[60px] md:my-[100px]">
+    <div className="flex flex-col items-center md:flex-row inner_section justify-between gap-5 px-4 md:px-8 my-[60px] md:my-[100px]">
       {data.map((item) => (
         <div key={item.number} className="flex h-full sm:h-[259px] w-full sm:w-[445px] flex-col items-start justify-start gap-2.5">
           <div className="flex w-full items-end gap-2">

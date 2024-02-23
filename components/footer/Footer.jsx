@@ -4,9 +4,9 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="h-full w-full bg-neutral-800 px-8 pb-[32px] md:pb-[120px] pt-[32px] md:pt-10 border">
+    <div className="h-full w-full bg-neutral-800 px-4 sm:px-8 pb-[32px] md:pb-[120px] pt-[32px] md:pt-10">
       <div className="inner_section flex flex-col items-start justify-start gap-0 md:gap-5">
-        <div className="flex items-center justify-center md:justify-start gap-2">
+        <div className="flex w-full justify-center lg:justify-start gap-2">
           <svg
             width="32"
             height="33"
@@ -22,15 +22,15 @@ export default function Footer() {
               />
             </g>
           </svg>
-          <div className={`text-2xl font-bold text-red-600 ${avenirLtPro.className}`}>
+          <p className={`text-2xl font-bold text-red-600 ${avenirLtPro.className}`}>
             Dealership
-          </div>
+          </p>
         </div>
         <hr className="my-[45px] w-full border border-neutral-100 md:my-[40px]" />
         <div className="flex h-full w-full flex-col gap-[45px] lg:gap-0 items-center justify-between lg:h-[146px] lg:flex-row lg:items-start">
-          <div className="flex h-full lg:h-[137px] flex-col items-start pb-[45px] lg:pb-0 justify-start gap-5 border-b border-r-0 lg:border-r lg:border-b-0 w-full lg:w-full">
-            <div className="flex w-[211px] flex-col items-start justify-start gap-5">
-              <div className="flex items-start justify-start gap-2 self-stretch">
+          <div className="flex h-full lg:h-[137px] flex-col items-start lg:pb-0 justify-start gap-5 w-full lg:border-r lg:border-b-0 lg:w-full">
+            <div className="flex mx-auto lg:mx-0 max-w-[343px] sm:w-full md:max-w-[211px] flex-col items-center md:items-start justify-center md:justify-start gap-5">
+              <div className="flex items-center md:items-start justify-between sm:justify-center md:justify-start w-full gap-2">
                 <svg
                   width="24"
                   height="24"
@@ -43,11 +43,11 @@ export default function Footer() {
                     fill="#F7F7F7"
                   />
                 </svg>
-                <div className={`shrink grow basis-0 text-base font-medium leading-normal text-neutral-100 ${inter.className}`}>
+                <p className={`shrink grow text-center sm:text-left basis-0 text-base font-medium leading-normal text-neutral-100 ${inter.className}`}>
                   17, kellington highway Lagos, Nigeria
-                </div>
+                </p>
               </div>
-              <div className="flex items-start justify-start gap-2 self-stretch">
+              <div className="flex mx-auto lg:mx-0 max-w-[190px] sm:max-w-max items-center justify-center w-full gap-2 self-stretch">
                 <svg
                   width="24"
                   height="24"
@@ -60,12 +60,12 @@ export default function Footer() {
                     fill="#F7F7F7"
                   />
                 </svg>
-                <div className={`shrink grow basis-0 text-base font-medium leading-normal text-neutral-100 ${inter.className}`}>
+                <p className={`shrink grow basis-0 text-base font-medium leading-normal text-neutral-100 ${inter.className}`}>
                   +2348-96748011
-                </div>
+                </p>
               </div>
             </div>
-            <div className="flex w-[211px] items-start justify-start gap-4">
+            <div className="flex w-full lg:w-[211px] items-center lg:items-start justify-center lg:justify-start gap-4">
               <svg
                 width="24"
                 height="24"
@@ -104,6 +104,7 @@ export default function Footer() {
               </svg>
             </div>
           </div>
+          <hr className="block lg:hidden w-full border border-neutral-100" />
           <div className="grid grid-cols-2 pb-[45px] border-b md:border-b-0 gap-y-[78px] md:flex h-full w-full lg:w-[3000px] justify-between items-start">
             <div className="flex h-full md:h-[137px] flex-col items-center justify-start gap-5 border-r-0 md:border-r w-full">
               <h3 className={`text-2xl font-bold text-neutral-100 ${avenirLtPro.className}`}>
@@ -204,7 +205,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className={`mt-[45px] md:mt-20px] flex items-start justify-start gap-2.5 text-base font-medium leading-normal text-neutral-100 ${inter.className}`}>
+        <div className={`mt-[45px] md:mt-[20px] flex items-center sm:items-start justify-center sm:justify-start w-full gap-2.5 text-base font-medium leading-normal text-neutral-100 ${inter.className}`}>
           <p>Copyright</p>
           <svg
             width="24"

@@ -5,7 +5,7 @@ import TabComponent from "./TabComponent";
 
 export default function LatestVehicles() {
   return (
-    <div className="inner_section flex flex-col items-start justify-start gap-[60px] px-4 md:px-8 my-[60px] md:my-[100px]">
+    <div className="inner_section flex flex-col items-start justify-start gap-[40px] md:gap-[60px] px-4 md:px-8 my-[60px] md:my-[100px]">
       <div className="flex flex-col items-start justify-start gap-10">
         <div className={`text-base font-normal text-neutral-800 ${inter.className}`}>
           WE RECOMMEND

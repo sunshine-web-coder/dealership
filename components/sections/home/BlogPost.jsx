@@ -15,7 +15,7 @@ export default function BlogPost() {
             LATEST BLOG POSTS
           </div>
           <div
-            className={`flex items-center justify-start gap-2.5 text-[40px] font-bold text-neutral-800 ${avenirLtPro.className}`}
+            className={`flex items-center text-center justify-start gap-2.5 text-[32px] md:text-[40px] font-bold text-neutral-800 ${avenirLtPro.className}`}
           >
             Auto World Blog
           </div>
@@ -24,16 +24,16 @@ export default function BlogPost() {
           {blogPostList.map((post) => (
             <div
               key={post.title}
-              className="flex w-[445px] flex-col items-start justify-start"
+              className="flex w-full sm:w-[445px] flex-col items-start justify-start"
             >
               <Image
                 width="445"
                 src={post.img}
                 height="310"
-                className="relative h-[310px] w-[445px] border"
+                className="relative h-[310px] w-full sm:w-[445px] border"
                 alt="blog_img"
               />
-              <div className="flex min-h-[301px] flex-col items-end justify-start gap-[26px] border border-t-0 border-neutral-800">
+              <div className="flex min-h-[320px] flex-col items-end justify-between gap-[26px] border border-t-0 border-neutral-800">
                 <div className="flex min-h-[215px] flex-col items-center justify-start gap-10 self-stretch p-5">
                   <div
                     className={`flex items-center justify-between self-stretch text-base font-normal text-neutral-800 ${inter.className}`}

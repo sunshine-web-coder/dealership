@@ -8,7 +8,7 @@
 } */
 
 .section{
-    @apply px-8 min-w-full
+    @apply px-4 md:px-8 min-w-full
 }
 
 .inner_section{
