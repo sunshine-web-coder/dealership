@@ -48,7 +48,7 @@ export default function Header() {
                 <Link
                   href=""
                   onClick={handleClose}
-                  className={`text-base block font-medium text-neutral-100 ${inter.className} ${isOpen ? "text-black px-[8px] py-[12px] block w-full lg:text-neutral-100" : ""}`}
+                  className={`text-base block font-medium text-[#333333] lg:text-neutral-100 ${inter.className} ${isOpen ? "text-black px-[8px] py-[12px] block w-full lg:text-neutral-100" : ""}`}
                 >
                   {link.label}
                 </Link>
