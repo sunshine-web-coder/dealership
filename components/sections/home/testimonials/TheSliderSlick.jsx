@@ -11,7 +11,7 @@ function SampleNextArrow(props) {
     <svg
       width="36"
       onClick={onClick}
-      className="absolute bottom-[-20px] z-20 ml-[10px] rotate-180 cursor-pointer lg:top-[370px] lg:ml-[10px]"
+      className="absolute bottom-[-35px] sm:bottom-[-20px] z-20 ml-[10px] rotate-180 cursor-pointer lg:top-[370px] lg:ml-[10px]"
       height="16"
       viewBox="0 0 36 16"
       fill="none"
@@ -32,7 +32,7 @@ function SamplePrevArrow(props) {
     <svg
       width="36"
       onClick={onClick}
-      className="absolute bottom-[-20px] z-20 ml-[70px] cursor-pointer lg:top-[370px] lg:ml-[70px]"
+      className="absolute bottom-[-35px] sm:bottom-[-20px] z-20 ml-[70px] cursor-pointer lg:top-[370px] lg:ml-[70px]"
       height="16"
       viewBox="0 0 36 16"
       fill="none"

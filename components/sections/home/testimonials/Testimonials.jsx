@@ -1,5 +1,4 @@
 import { avenirLtPro, inter } from "@/app/fonts";
-import Image from "next/image";
 import React from "react";
 import TheSliderSlick from "./TheSliderSlick";
 
